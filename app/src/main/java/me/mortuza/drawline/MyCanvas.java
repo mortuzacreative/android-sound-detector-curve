@@ -165,9 +165,6 @@ public class MyCanvas extends SurfaceView implements Runnable {
         canDraw = true;
         thread = new Thread(this);
         thread.start();
-        if(soundMeter != null){
-            soundMeter.stop();
-        }
         try {
             soundMeter.start();
         } catch (IOException e) {
